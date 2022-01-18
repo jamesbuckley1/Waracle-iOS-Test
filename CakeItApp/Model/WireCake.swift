@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Cake: Codable {
+struct WireCake: Codable {
     let title: String
     let desc: String
     let image: String
