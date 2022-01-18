@@ -22,7 +22,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="102" id="Urq-R9-JPG" customClass="CakeTableViewCell" customModule="CakeItApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CakeCell" rowHeight="102" id="Urq-R9-JPG" customClass="CakeTableViewCell" customModule="CakeItApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="102"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Urq-R9-JPG" id="z7g-oF-eg8">
@@ -35,11 +35,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wd5-ss-wLr">
-                                                    <rect key="frame" x="0.0" y="-24" width="150" height="150"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wd5-ss-wLr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="102"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="BOI-8s-6Ab"/>
-                                                        <constraint firstAttribute="height" constant="150" id="Xbv-5t-yEc"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8f8-go-YTY">
@@ -52,11 +51,13 @@
                                             <constraints>
                                                 <constraint firstItem="8f8-go-YTY" firstAttribute="leading" secondItem="Wd5-ss-wLr" secondAttribute="trailing" constant="10" id="6E2-Z9-37c"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fUu-lS-BeP" secondAttribute="bottom" constant="10" id="6rS-LL-Nlr"/>
+                                                <constraint firstAttribute="bottom" secondItem="Wd5-ss-wLr" secondAttribute="bottom" id="9OE-Oi-9bu"/>
                                                 <constraint firstItem="8f8-go-YTY" firstAttribute="top" secondItem="z7g-oF-eg8" secondAttribute="top" constant="10" id="CmU-fe-WuR"/>
                                                 <constraint firstItem="Wd5-ss-wLr" firstAttribute="centerY" secondItem="z7g-oF-eg8" secondAttribute="centerY" id="S3u-DP-91o"/>
                                                 <constraint firstAttribute="trailing" secondItem="8f8-go-YTY" secondAttribute="trailing" constant="10" id="Vry-KX-2K7"/>
                                                 <constraint firstItem="fUu-lS-BeP" firstAttribute="top" secondItem="8f8-go-YTY" secondAttribute="bottom" constant="10" id="Z4U-NH-VXR"/>
                                                 <constraint firstItem="fUu-lS-BeP" firstAttribute="leading" secondItem="Wd5-ss-wLr" secondAttribute="trailing" constant="10" id="bRQ-0a-I1a"/>
+                                                <constraint firstItem="Wd5-ss-wLr" firstAttribute="top" secondItem="z7g-oF-eg8" secondAttribute="top" id="cfG-9X-0Dn"/>
                                                 <constraint firstAttribute="trailing" secondItem="fUu-lS-BeP" secondAttribute="trailing" constant="10" id="rgd-21-NZm"/>
                                                 <constraint firstItem="Wd5-ss-wLr" firstAttribute="leading" secondItem="z7g-oF-eg8" secondAttribute="leading" id="wHd-WY-ncN"/>
                                             </constraints>

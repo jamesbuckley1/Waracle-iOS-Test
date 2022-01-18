@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import UIKit
+
+struct Cake {
+    var title: String?
+    var desc: String?
+    var image: UIImage?
+}

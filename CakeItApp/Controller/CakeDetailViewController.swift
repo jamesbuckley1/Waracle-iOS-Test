@@ -17,17 +17,13 @@ class CakeDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = "cake title"
-        descriptionLabel.text = "cake description"
+        titleLabel.text = "Cake Title"
+        descriptionLabel.text = "Cake description"
         
         if let cake = self.cake {
-            let imageURL = URL(string: cake.image)!
-            
-            guard let imageData = try? Data(contentsOf: imageURL) else { return }
-                
-            cakeImageView.image = UIImage(data: imageData)
-            
-            
+            titleLabel.text = cake.title
+            descriptionLabel.text = cake.desc
+            cakeImageView.image = cake.image
         }
     }
 }
